@@ -109,6 +109,11 @@ p {
   text-decoration-line: line-through;
 }
 /* 10 */
+.article__text--edit {
+  padding-top: 8px;
+  text-indent: 0;
+}
+/* 10 */
 .footer {
   margin-top: 35px;
   padding-bottom: 24px;
