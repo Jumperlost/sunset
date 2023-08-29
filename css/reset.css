@@ -133,7 +133,7 @@ table {
   border-spacing: 0;
 }
 /* 0 */
-/* * {
+* {
   box-sizing: border-box;
-  outline: 1px solid black;
-} */
+  /* outline: 1px solid black; */
+}
