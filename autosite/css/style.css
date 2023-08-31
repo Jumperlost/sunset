@@ -3,7 +3,7 @@
 /* Page Sing up */
 body {
   width: 100%;
-  background-color: #629fab;
+  background-color: #08d9d6;
   font-family: "Chakra+Petch", sans-serif;
   display: flex;
 }
@@ -12,11 +12,12 @@ body {
   width: 25%;
   margin: 15%;
   padding: 5%;
-  background-color: #66ced6;
-  border: 5px solid #06121b;
-  border-radius: 15%;
+  border-radius: 5%;
   margin-top: 5%;
-  box-shadow: 15px 15px 75px rgba(102, 206, 214, 0.8);
+  box-shadow: rgba(255, 46, 99, 0.4) 0px 5px, rgba(255, 46, 99, 0.3) 0px 10px,
+    rgba(255, 46, 99, 0.2) 0px 15px, rgba(255, 46, 99, 0.1) 0px 20px,
+    rgba(255, 46, 99, 0.05) 0px 25px;
+  background-color: #252a34;
 }
 
 .header {
@@ -24,13 +25,13 @@ body {
   font-weight: 700;
   font-size: 5vmin;
   color: #06121b;
-  border: 5px solid #06121b;
-  border-radius: 5%;
-  background-color: #66ced6;
+  margin-bottom: 5%;
+  color: #eaeaea;
 }
 
 .form__group {
   margin-bottom: 5%;
+  color: #eaeaea;
 }
 
 .form__group input {
@@ -48,53 +49,60 @@ body {
 }
 
 .form__groug--spec input {
-  padding: 2.5%;
+  width: 75%;
+  padding: 4%;
   border-radius: 50px;
-  padding: 5%;
-  margin-bottom: 8%;
+  margin-bottom: 7%;
 }
 .form__groug--spec input:hover {
-  background-color: #299bbd;
-  transition: all 1s;
+  background-color: #ff2e63;
   border: 2px solid #06121b;
+  transition: 0.5s ease;
+}
+
+.wrapper__login {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.registration-container__log {
+  padding: 5%;
+  text-decoration: none;
+  color: #06121b;
+  margin-top: 10%;
+  border: 2px solid #06121b;
+  border-radius: 12.5%;
+  background-color: #fff;
+}
+
+.registration-container__log:hover {
+  cursor: pointer;
+  background-color: #ff2e63;
+  transition: 0.5s ease;
+}
+
+.facebook,
+.google {
+  width: 100%;
 }
 
 .wrapper__img {
   width: 100%;
 }
 
-.header__log {
-  padding: 5%;
-  text-decoration: none;
-  color: #06121b;
-  border: 2.5px solid #06121b;
-  border-radius: 50px;
-  margin-left: 25%;
-}
-
-p .form__group--spec {
-  text-align: center;
-}
-.header__log:hover {
+.links {
+  display: flex;
   cursor: pointer;
-  color: #1a657f;
+  margin-top: 10%;
 }
 
-/* color palette */
-.color1 {
-  color: #06121b;
-}
-.color2 {
-  color: #0f3747;
-}
-.color3 {
-  color: #1a657f;
-}
-.color4 {
-  color: #299bbd;
-}
-.color5 {
-  color: #2bc8c8;
+.facebook,
+.google {
+  width: 100%;
+  border: 1px solid #06121b;
+  padding: 5%;
+  margin: 0 2%;
 }
 
 /* Page sing in */
@@ -116,7 +124,7 @@ p .form__group--spec {
 .login-container {
   width: 25%;
   margin: 15%;
-  padding: 6%;
+  padding: 5%;
   background-color: #66ced6;
   border: 5px solid #06121b;
   box-shadow: 10% #06121b;
@@ -130,7 +138,6 @@ p .form__group--spec {
   font-weight: 700;
   font-size: 5vmin;
   color: #06121b;
-  border: 5px solid #06121b;
-  border-radius: 10%;
   background-color: #66ced6;
+  margin-bottom: 10%;
 }

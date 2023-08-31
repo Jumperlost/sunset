@@ -8,14 +8,18 @@
     <title>Sing</title>
   </head>
   <body>
-    <fieldset class="registration-container">
-      <legend class="registration-container__legend">
-        <h2 class="header">Registration</h2>
-      </legend>
+    <div class="registration-container">
+      <h2 class="header">Registration</h2>
       <form action=" https://fom.in.ua/echo" method="post">
         <p class="form__group">
           <label for="email">Email</label
-          ><input type="email" id="email" name="email" required />
+          ><input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter email address"
+            required
+          />
         </p>
         <p class="form__group">
           <label for="password">Password</label>
@@ -24,6 +28,7 @@
             id="password"
             name="password"
             minlength="8"
+            placeholder="Enter password"
             required
           />
         </p>
@@ -34,16 +39,29 @@
             id="confirm-password"
             name="confirm-password"
             minlength="8"
+            placeholder="Confirm password"
             required
           />
         </p>
-        <p class="form__groug--spec">
-          <input type="submit" value="Sign up" />
-        </p>
-        <p class="form__group">if you are registered, click sign in</p>
-        <a class="header__log" href="pages/sing_in.html">Sing in</a>
+        <div class="wrapper__login">
+          <p class="form__groug--spec">
+            <input type="submit" value="Sign up" />
+          </p>
+          <p class="form__group">Or login</p>
+          <a class="registration-container__log" href="pages/sing_in.html"
+            >Sing in</a
+          >
+          <div class="links">
+            <div class="facebook">
+              <i class="facebook-registration"><span>Facebook</span></i>
+            </div>
+            <div class="google">
+              <i class="google-registration"><span>Google</span></i>
+            </div>
+          </div>
+        </div>
       </form>
-    </fieldset>
+    </div>
     <div class="wrapper__img">
       <img
         src="
