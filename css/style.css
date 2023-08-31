@@ -11,10 +11,10 @@ body {
 
 /* 10 */
 .wrapper {
-  width: 89%;
+  width: 88%;
   margin: 0 auto;
   background-color: #fff;
-  padding: 0 4%;
+  padding: 0 3%;
 }
 /* 1 */
 p {
@@ -70,29 +70,27 @@ p {
 }
 /* 10 */
 .nav-wrap {
-  width: 29%;
+  width: 14%;
+  height: fit-content;
   border-radius: 2px 15px;
   background: #d7d7d7;
-  padding: 2.5% 2%;
+  padding: 2.2% 2%;
   font-family: Arial, Helvetica, sans-serif;
+  flex-shrink: 0;
 }
 /* 10 */
 .nav-heading {
-  padding-left: 28%;
   color: #000;
-  font-size: 1rem;
   font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 22%;
 }
 /* 10 */
 .nav__link {
   text-decoration: none;
-  padding-top: 25%;
   color: #000;
-  padding-left: 28%;
-  color: #000;
-  font-size: 1rem;
 }
-/* 20 */
+/* 20 -> class - 10, :hover - 10 */
 .nav__link:hover {
   font-weight: 700;
   color: #a11414;
