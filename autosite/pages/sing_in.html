@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sing in</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper__img">
+      <img class="img__login" src="../img/car__back.avif" alt="car" />
+    </div>
+    <fieldset class="login-container">
+      <legend class="login-container__legend">
+        <h2 class="header__login">Login</h2>
+      </legend>
+      <form action=" https://fom.in.ua/echo" method="post">
+        <p class="form__group">
+          <label for="email">Email</label
+          ><input type="email" id="email" name="email" required />
+        </p>
+        <p class="form__group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            minlength="8"
+            required
+          />
+        </p>
+        <p class="form__groug--spec">
+          <input type="submit" value="Sing in" />
+        </p>
+        <p class="form__group">
+          <input type="checkbox" id="rememberMe" name="rememberMe" /><label
+            for=""
+            >Remember password</label
+          >
+        </p>
+        <a class="header__log" href="../sing_up.html">Sing up</a>
+      </form>
+    </fieldset>
+  </body>
+</html>

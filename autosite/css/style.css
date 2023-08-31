@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,700;1,300&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap");
+
+/* Page Sing up */
+body {
+  width: 100%;
+  background-color: #629fab;
+  font-family: "Chakra+Petch", sans-serif;
+  display: flex;
+}
+
+.registration-container {
+  width: 25%;
+  margin: 15%;
+  padding: 5%;
+  background-color: #66ced6;
+  border: 5px solid #06121b;
+  border-radius: 15%;
+  margin-top: 5%;
+  box-shadow: 15px 15px 75px rgba(102, 206, 214, 0.8);
+}
+
+.header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 5vmin;
+  color: #06121b;
+  border: 5px solid #06121b;
+  border-radius: 5%;
+  background-color: #66ced6;
+}
+
+.form__group {
+  margin-bottom: 5%;
+}
+
+.form__group input {
+  width: 100%;
+  padding: 2%;
+  border: 2.5px solid #06121b;
+  cursor: pointer;
+  border-radius: 10%;
+}
+
+.form__groug--spec {
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.form__groug--spec input {
+  padding: 2.5%;
+  border-radius: 50px;
+  padding: 5%;
+  margin-bottom: 8%;
+}
+.form__groug--spec input:hover {
+  background-color: #299bbd;
+  transition: all 1s;
+  border: 2px solid #06121b;
+}
+
+.wrapper__img {
+  width: 100%;
+}
+
+.header__log {
+  padding: 5%;
+  text-decoration: none;
+  color: #06121b;
+  border: 2.5px solid #06121b;
+  border-radius: 50px;
+  margin-left: 25%;
+}
+
+p .form__group--spec {
+  text-align: center;
+}
+.header__log:hover {
+  cursor: pointer;
+  color: #1a657f;
+}
+
+/* color palette */
+.color1 {
+  color: #06121b;
+}
+.color2 {
+  color: #0f3747;
+}
+.color3 {
+  color: #1a657f;
+}
+.color4 {
+  color: #299bbd;
+}
+.color5 {
+  color: #2bc8c8;
+}
+
+/* Page sing in */
+
+.img__login {
+  padding-left: 10%;
+  animation: moveRight 5s linear;
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.login-container {
+  width: 25%;
+  margin: 15%;
+  padding: 6%;
+  background-color: #66ced6;
+  border: 5px solid #06121b;
+  box-shadow: 10% #06121b;
+  border-radius: 25%;
+  margin-top: 5%;
+  box-shadow: 15px 15px 75px rgba(102, 206, 214, 0.8);
+}
+
+.header__login {
+  text-align: center;
+  font-weight: 700;
+  font-size: 5vmin;
+  color: #06121b;
+  border: 5px solid #06121b;
+  border-radius: 10%;
+  background-color: #66ced6;
+}
