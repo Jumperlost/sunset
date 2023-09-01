@@ -3,15 +3,25 @@
 /* Page Sing up */
 body {
   width: 100%;
-  background-color: #08d9d6;
   font-family: "Chakra+Petch", sans-serif;
+  background-image: url(../img/back.jpeg);
+}
+
+.container-auth {
+  width: 89%;
   display: flex;
 }
 
+.form-flx {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 .registration-container {
-  width: 25%;
-  margin: 15%;
-  padding: 5%;
+  width: 20%;
+  margin: 5%;
+  padding: 7%;
   border-radius: 5%;
   margin-top: 5%;
   box-shadow: rgba(255, 46, 99, 0.4) 0px 5px, rgba(255, 46, 99, 0.3) 0px 10px,
@@ -21,9 +31,8 @@ body {
 }
 
 .header {
-  text-align: center;
   font-weight: 700;
-  font-size: 5vmin;
+  font-size: 6vmin;
   color: #06121b;
   margin-bottom: 5%;
   color: #eaeaea;
@@ -35,44 +44,37 @@ body {
 }
 
 .form__group input {
-  width: 100%;
+  width: 89%;
   padding: 2%;
   border: 2.5px solid #06121b;
   cursor: pointer;
-  border-radius: 10%;
 }
 
-.form__groug--spec {
+.form__group--spec {
   width: 100%;
-  text-align: center;
   cursor: pointer;
 }
 
-.form__groug--spec input {
-  width: 75%;
-  padding: 4%;
-  border-radius: 50px;
+.form__group--spec input {
+  width: 50%;
+  padding: 2.5%;
   margin-bottom: 7%;
+  margin-top: 7%;
 }
-.form__groug--spec input:hover {
+.form__group--spec input:hover {
   background-color: #ff2e63;
   border: 2px solid #06121b;
   transition: 0.5s ease;
 }
 
-.wrapper__login {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
 .registration-container__log {
-  padding: 5%;
+  width: 50%;
+  margin: 0 auto;
+  padding: 2.5%;
   text-decoration: none;
   color: #06121b;
   margin-top: 10%;
   border: 2px solid #06121b;
-  border-radius: 12.5%;
   background-color: #fff;
 }
 
@@ -82,62 +84,107 @@ body {
   transition: 0.5s ease;
 }
 
-.facebook,
-.google {
-  width: 100%;
+.wrapper__img--spec {
+  width: 50%;
+}
+.img__reg {
+  padding-right: 50%;
+  animation: moveForwardAndBackward 4s linear infinite;
 }
 
-.wrapper__img {
-  width: 100%;
-}
-
-.links {
-  display: flex;
-  cursor: pointer;
-  margin-top: 10%;
-}
-
-.facebook,
-.google {
-  width: 100%;
-  border: 1px solid #06121b;
-  padding: 5%;
-  margin: 0 2%;
-}
-
-/* Page sing in */
-
-.img__login {
-  padding-left: 10%;
-  animation: moveRight 5s linear;
-}
-
-@keyframes moveRight {
+@keyframes moveForwardAndBackward {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10%);
   }
   100% {
     transform: translateX(0);
   }
 }
 
-.login-container {
-  width: 25%;
-  margin: 15%;
-  padding: 5%;
-  background-color: #66ced6;
-  border: 5px solid #06121b;
-  box-shadow: 10% #06121b;
-  border-radius: 25%;
+.form__group--edit {
+  color: #ff2e63;
   margin-top: 5%;
-  box-shadow: 15px 15px 75px rgba(102, 206, 214, 0.8);
 }
 
-.header__login {
+/* Page sing in */
+
+.wrapper__img {
+  width: 50%;
+}
+.img__login {
+  padding-left: 20%;
+  animation: moveForwardAndBackward 4s linear infinite;
+}
+
+@keyframes moveForwardAndBackward {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.container-auth {
+  width: 89%;
+  margin: 0 auto;
+}
+.login-container {
+  width: 45%;
+  padding: 7%;
+  margin: 15%;
+  border-radius: 5%;
+  margin-top: 5%;
+  box-shadow: rgba(255, 46, 99, 0.4) 0px 5px, rgba(255, 46, 99, 0.3) 0px 10px,
+    rgba(255, 46, 99, 0.2) 0px 15px, rgba(255, 46, 99, 0.1) 0px 20px,
+    rgba(255, 46, 99, 0.05) 0px 25px;
+  background-color: #252a34;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+}
+
+.login-container h2 {
   font-weight: 700;
-  font-size: 5vmin;
+  font-size: 6vmin;
   color: #06121b;
-  background-color: #66ced6;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
+  color: #eaeaea;
+}
+
+.form__group--flex {
+  display: flex;
+  text-align: center;
+}
+
+.form__group--flex label {
+  color: #eaeaea;
+  user-select: none;
+}
+
+.form__group--flex input {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.header__log {
+  width: 50%;
+  margin: 0 auto;
+  padding: 2.5%;
+  text-decoration: none;
+  color: #06121b;
+  margin-top: 10%;
+  border: 2px solid #06121b;
+  background-color: #fff;
+}
+
+.header__log:hover {
+  background-color: #ff2e63;
+  border: 2px solid #06121b;
+  transition: 0.5s ease;
 }

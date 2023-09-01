@@ -8,37 +8,47 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <div class="wrapper__img">
-      <img class="img__login" src="../img/car__back.avif" alt="car" />
-    </div>
-    <div class="login-container">
-      <h2 class="header__login">Login</h2>
-      <form action=" https://fom.in.ua/echo" method="post">
-        <p class="form__group">
-          <label for="email">Email</label
-          ><input type="email" id="email" name="email" required />
-        </p>
-        <p class="form__group">
-          <label for="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            minlength="8"
-            required
-          />
-        </p>
-        <p class="form__groug--spec">
-          <input type="submit" value="Sing in" />
-        </p>
-        <p class="form__group">
-          <input type="checkbox" id="rememberMe" name="rememberMe" /><label
-            for=""
-            >Remember password</label
-          >
-        </p>
-        <a class="header__log" href="../sing_up.html">Sing up</a>
-      </form>
+    <div class="container-auth">
+      <div class="wrapper__img">
+        <img class="img__login" src="../img/car__back.avif" alt="car" />
+      </div>
+      <div class="login-container">
+        <h2 class="header__login">Login</h2>
+        <form class="form-flx" action=" https://fom.in.ua/echo" method="post">
+          <p class="form__group">
+            <label for="email">Email</label
+            ><input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </p>
+          <p class="form__group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              minlength="8"
+              placeholder="Password"
+              required
+            />
+          </p>
+          <p class="form__group--spec">
+            <input type="submit" value="Sing in" />
+          </p>
+          <p class="form__group--flex">
+            <input type="checkbox" id="rememberMe" name="rememberMe" /><label
+              for="rememberMe"
+              for=""
+              >Remember password</label
+            >
+          </p>
+          <a class="header__log" href="../sing_up.html">Sing up</a>
+        </form>
+      </div>
     </div>
   </body>
 </html>
