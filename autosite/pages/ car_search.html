@@ -8,18 +8,44 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <h1 class="header">Search for cars</h1>
-    <form id="car-search-form" action=" https://fom.in.ua/echo" method="POST">
-      <label for="">
-        <select name="" id="">
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-        </select>
-      </label>
-    </form>
-  </body>
-</html>
+    <div class="wrapper">
+      <div class="wrapper-imposter">
+        <h1 class="header">Search for cars</h1>
+        <form id="wrapper-search" action=" https://fom.in.ua/echo" method="POST">
+          <label for="bodyTypeFilter-label"> Body type </label>
+          <select name="bodyTypeFilter-label" id="bodyTypeFilter-label">
+            <option value="Compact">Compact</option>
+            <option value="Coupe">Coupe</option>
+            <option value="Sedans">Sedans</option>
+            <option value="Off-Road">Off-Road</option>
+            <option value="Station wagon">Station wagon</option>
+            <option value="Van">Van</option>
+          </select>
+          <label for="make-input-primary">Make</label>
+          <select name="make-input-primary" id="make-input-primary">
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Ford">Ford</option>
+            <option value="Mercedes-Benz">Mercedes-Benz</option>
+            <option value="Opel">Opel</option>
+            <option value="Volkswagen">Volkswagen</option>
+          </select>
+          <label for="FuelTypeFilter-label">Fuel type</label>
+          <select name="FuelTypeFilter-label" id="FuelTypeFilter-label">
+            <option value="Gasoline">Gasoline</option>
+            <option value="Diesel">Diesel</option>
+            <option value="Ethanol">Ethanol</option>
+            <option value="Elevtric">Elevtric</option>
+            <option value="Hydrogen">Hydrogen</option>
+            <option value="Hybrid">Hybrid</option>
+          </select>
+          <label for="GearMultiSelect-label">Gear</label>
+          <select name="GearMultiSelect-label" id="GearMultiSelect-label">
+            <option value="Manual">Manual</option>
+            <option value="Automatic">Automatic</option>
+            <option value="Semi-automatic">Semi-automatic</option>
+          </form>
+        </div>
+      </div>
+      </body>
+      </html>
