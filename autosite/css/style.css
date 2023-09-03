@@ -7,8 +7,17 @@ body {
   background-image: url(../img/back.jpeg);
 }
 
+.container-header-form {
+  font-weight: 700;
+  font-size: 5vmin;
+  color: #06121b;
+  margin-bottom: 15%;
+  color: #eaeaea;
+  text-align: center;
+}
+
 .container-auth {
-  width: 89%;
+  width: 80%;
   display: flex;
   margin: 0 auto;
 }
@@ -17,12 +26,13 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
 }
 
 .registration-container {
-  width: 20%;
+  width: 45%;
   margin: 5%;
-  padding: 7%;
+  padding: 2%;
   border-radius: 5%;
   margin-top: 5%;
   box-shadow: rgba(255, 46, 99, 0.4) 0px 5px, rgba(255, 46, 99, 0.3) 0px 10px,
@@ -31,21 +41,13 @@ body {
   background-color: #252a34;
 }
 
-.header {
-  font-weight: 700;
-  font-size: 6vmin;
-  color: #06121b;
-  margin-bottom: 5%;
-  color: #eaeaea;
-}
-
 .form__group {
   margin-bottom: 5%;
   color: #eaeaea;
 }
 
 .form__group input {
-  width: 89%;
+  width: 100%;
   padding: 2%;
   border: 2.5px solid #06121b;
   cursor: pointer;
@@ -89,8 +91,7 @@ body {
   width: 100%;
 }
 .img__reg {
-  width: 100%;
-  padding-right: 50%;
+  display: block;
   animation: moveForwardAndBackward 4s linear infinite;
 }
 
@@ -113,30 +114,9 @@ body {
 
 /* Page sing in */
 
-.wrapper__img {
-  width: 100%;
-}
-.img__login {
-  width: 100%;
-  padding-left: 20%;
-  animation: moveForwardAndBackward 4s linear infinite;
-}
-
-@keyframes moveForwardAndBackward {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(10%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
 .login-container {
   width: 45%;
-  padding: 7%;
+  padding: 2%;
   margin: 15%;
   border-radius: 5%;
   margin-top: 5%;
@@ -149,17 +129,13 @@ body {
   text-align: center;
 }
 
-.login-container h2 {
-  font-weight: 700;
-  font-size: 6vmin;
-  color: #06121b;
-  margin-bottom: 15%;
-  color: #eaeaea;
+p .form__group label {
+  padding-bottom: 5;
 }
 
 .form__group--flex {
-  display: flex;
-  text-align: center;
+  display: inline-block;
+  justify-content: center;
 }
 
 .form__group--flex label {
@@ -192,19 +168,82 @@ body {
 
 /* car_search */
 
-.wrapper {
-  width: 89%;
+label,
+select option {
   display: flex;
-  flex-wrap: wrap;
+  margin: 0 auto;
 }
+
+label {
+  color: #eaeaea;
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+
+select {
+  cursor: pointer;
+  text-align: center;
+  width: 65%;
+}
+
 .wrapper-imposter {
-  width: 45%;
+  width: 50%;
   margin: 5%;
-  padding: 7%;
-  border-radius: 5%;
+  padding: 2%;
   margin-top: 5%;
+  border-radius: 5%;
   box-shadow: rgba(255, 46, 99, 0.4) 0px 5px, rgba(255, 46, 99, 0.3) 0px 10px,
     rgba(255, 46, 99, 0.2) 0px 15px, rgba(255, 46, 99, 0.1) 0px 20px,
     rgba(255, 46, 99, 0.05) 0px 25px;
   background-color: #252a34;
+}
+
+/* Menu sidebar */
+
+.sidebar {
+  display: block;
+  position: relative;
+  justify-content: start;
+  display: inline-block;
+}
+.sidebar__btn {
+  background-color: #252a34;
+  color: #eaeaea;
+  cursor: pointer;
+  margin-right: 1%;
+  padding: 50%;
+  box-shadow: rgba(255, 46, 99, 0.4) 0px 5px, rgba(255, 46, 99, 0.3) 0px 10px,
+    rgba(255, 46, 99, 0.2) 0px 15px, rgba(255, 46, 99, 0.1) 0px 20px,
+    rgba(255, 46, 99, 0.05) 0px 25px;
+  border-radius: 15%;
+}
+
+.sidebar__btn:hover {
+  background-color: #ff2e63;
+  transition: 0.5s ease;
+}
+
+.sidebar__drop {
+  width: 150px;
+  display: none;
+  background-color: #252a34;
+  border-radius: 5%;
+}
+
+.sidebar__drop a {
+  display: block;
+  color: #eaeaea;
+  padding: 5%;
+  text-decoration: none;
+}
+
+.sidebar:hover .sidebar__drop {
+  position: absolute;
+  display: block;
+  z-index: 999999;
+  top: 100%;
+}
+
+.sidebar__drop a:hover {
+  background-color: #ff2e63;
 }

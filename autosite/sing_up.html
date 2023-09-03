@@ -8,13 +8,21 @@
     <title>Sing</title>
   </head>
   <body>
+    <div class="sidebar">
+      <button class="sidebar__btn">Menu</button>
+      <div class="sidebar__drop">
+        <a href="sing_up.html" class="dropmenu__link">Registration</a>
+        <a href="pages/sing_in.html" class="dropmenu__link">Login</a>
+        <a href="pages/car_search.html" class="dropmenu__link">Search car</a>
+      </div>
+    </div>
     <div class="container-auth">
       <div class="registration-container">
-        <h2 class="header">Registration</h2>
+        <h2 class="container-header-form">Registration</h2>
         <form class="form-flx" action=" https://fom.in.ua/echo" method="post">
           <p class="form__group">
-            <label for="email">Email</label
-            ><input
+            <label for="email">Email</label>
+            <input
               type="email"
               id="email"
               name="email"
@@ -47,9 +55,9 @@
           <p class="form__group--spec">
             <input type="submit" value="Sign up" />
           </p>
-          <p class="form__group--edit">Or login</p>
+          <p class="form__group--edit">Or</p>
           <a class="registration-container__log" href="pages/sing_in.html"
-            >Sing in</a
+            >Login</a
           >
         </form>
       </div>
