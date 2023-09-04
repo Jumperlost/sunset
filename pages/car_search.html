@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <button class="sidebar__btn">Menu</button>
+      <div class="sidebar__drop">
+        <a href="../sing_up.html" class="dropmenu__link">Registration</a>
+        <a href="sing_in.html" class="dropmenu__link">Login</a>
+        <a href="car_search.html" class="dropmenu__link">Search car</a>
+      </div>
+    </div>
+    <div class="container-auth">
+      <div class="wrapper-imposter">
+        <h2 class="container-header-form">Search for cars</h2>
+        <form class="form-flx" action=" https://fom.in.ua/echo" method="POST">
+          <label for="bodyTypeFilter-label"> Body type </label>
+          <select name="bodyTypeFilter-label" id="bodyTypeFilter-label">
+            <option value="Compact">Compact</option>
+            <option value="Coupe">Coupe</option>
+            <option value="Sedans">Sedans</option>
+            <option value="Off-Road">Off-Road</option>
+            <option value="Station wagon">Station wagon</option>
+            <option value="Van">Van</option>
+          </select>
+          <label for="make-input-primary">Make</label>
+          <select name="make-input-primary" id="make-input-primary">
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Ford">Ford</option>
+            <option value="Mercedes-Benz">Mercedes-Benz</option>
+            <option value="Opel">Opel</option>
+            <option value="Volkswagen">Volkswagen</option>
+          </select>
+          <label for="FuelTypeFilter-label">Fuel type</label>
+          <select name="FuelTypeFilter-label" id="FuelTypeFilter-label">
+            <option value="Gasoline">Gasoline</option>
+            <option value="Diesel">Diesel</option>
+            <option value="Ethanol">Ethanol</option>
+            <option value="Elevtric">Elevtric</option>
+            <option value="Hydrogen">Hydrogen</option>
+            <option value="Hybrid">Hybrid</option>
+          </select>
+          <label for="GearMultiSelect-label">Gear</label>
+          <select name="GearMultiSelect-label" id="GearMultiSelect-label">
+            <option value="Manual">Manual</option>
+            <option value="Automatic">Automatic</option>
+            <option value="Semi-automatic">Semi-automatic</option>
+          </select>
+          <label for="ColorsAccordion-label">Upholstery</label>
+          <select name="ColorsAccordion-label" id="ColorsAccordion-label">
+            <option value="Alcantara">Alcantara</option>
+            <option value="Full leather">Full leather</option>
+            <option value="Velour">Velour</option>
+            <option value="Cloch">Cloch</option>
+            <option value="Part leather">Part leather</option>
+          </select>
+          <label for="OptionalEquipment-label">Upholstery</label>
+          <select name="OptionalEquipment-label" id="OptionalEquipment-label">
+            <option value="4WD">4WD</option>
+            <option value="Adaptive Cruise Control">
+              Adaptive Cruise Control
+            </option>
+            <option value="LED HEadlights">LED HEadlights</option>
+            <option value="Navigator system">Navigator system</option>
+            <option value="ABS">ABS</option>
+          </select>
+          <p class="form__group--spec">
+            <input type="submit" value="Search" />
+          </p>
+        </form>
+      </div>
+      <div class="wrapper__img--spec">
+        <img class="img__reg" src="../img/car__back.avif" alt="car" />
+      </div>
+    </div>
+  </body>
+</html>

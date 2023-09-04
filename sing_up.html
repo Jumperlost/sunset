@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Sing</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <button class="sidebar__btn">Menu</button>
+      <div class="sidebar__drop">
+        <a href="sing_up.html" class="dropmenu__link">Registration</a>
+        <a href="pages/sing_in.html" class="dropmenu__link">Login</a>
+        <a href="pages/car_search.html" class="dropmenu__link">Search car</a>
+      </div>
+    </div>
+    <div class="container-auth">
+      <div class="registration-container">
+        <h2 class="container-header-form">Registration</h2>
+        <form class="form-flx" action=" https://fom.in.ua/echo" method="post">
+          <p class="form__group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter email address"
+              required
+            />
+          </p>
+          <p class="form__group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              minlength="8"
+              placeholder="Enter password"
+              required
+            />
+          </p>
+          <p class="form__group">
+            <label for="confirm-password">Confirm password</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              minlength="8"
+              placeholder="Confirm password"
+              required
+            />
+          </p>
+          <p class="form__group--spec">
+            <input type="submit" value="Sign up" />
+          </p>
+          <p class="form__group--edit">Or</p>
+          <a class="registration-container__log" href="pages/sing_in.html"
+            >Login</a
+          >
+        </form>
+      </div>
+      <div class="wrapper__img--spec">
+        <img
+          class="img__reg"
+          src="
+          img/car__back.avif"
+          alt="car"
+        />
+      </div>
+    </div>
+  </body>
+</html>
