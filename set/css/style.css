@@ -1,0 +1,61 @@
+/* Net */
+.wrapper {
+  width: 100%;
+  background-color: bisque;
+}
+p {
+  font-style: italic;
+  text-align: start;
+}
+a {
+  text-decoration: none;
+  font-size: 24px;
+  padding: 2%;
+  color: black;
+  border: 1px solid darkmagenta;
+  background-color: aquamarine;
+}
+
+a:hover {
+  color: blue;
+  background-color: magenta;
+}
+img {
+  border: 2px solid darkmagenta;
+  border-radius: 25px;
+  transition: transform 0, 4s;
+}
+img:hover {
+  transform: scale(1.2);
+}
+.autocar {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+}
+.auto-col__about {
+  color: rgb(47, 41, 41);
+}
+.auto-col {
+  width: 33%;
+  margin-bottom: 5%;
+}
+.auto-col img {
+  width: 100%;
+}
+.auto-col__heading {
+  font-size: 4vmin;
+  font-weight: 700;
+}
+
+.auto-col__about {
+  font-size: 4vmin;
+}
+.auto-col__footer {
+  margin-top: 5%;
+}
+* {
+  /* outline: 2px solid firebrick; */
+}
