@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Volkhov:wght@700&display=swap");
+body {
+  flex-shrink: 0;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  background-color: #fff;
+  letter-spacing: 0.5%;
+  overflow-y: scroll;
+  color: #0c111f;
+  font-size: 20px;
+}
+body,
+.card__middle,
+.wrap {
+  width: 100%;
+}
+header,
+.card,
+.aside {
+  width: 100%;
+  color: #fff;
+  background-color: #0c111f;
+}
+.card__figure,
+.card__home,
+.card__reglog,
+.card__subtitle,
+.card__title,
+.list-item,
+.card__header--edit,
+.wrap,
+.card__header {
+  display: flex;
+  justify-content: space-around;
+}
+.card__header {
+  position: fixed;
+}
+.aside,
+.card__middle,
+.row-item,
+.holder,
+.wrap__item_btn {
+  display: flex;
+}
+.submenu__li-item {
+  display: inline-block;
+}
+.link-item {
+  display: block;
+  padding: 5%;
+}
+.submenu-link {
+  position: relative;
+}
+.submenu-spec {
+  display: none;
+  position: absolute;
+}
+.submenu-link:hover .submenu-spec {
+  display: block;
+}
+.submenu__li-item {
+  width: 150px;
+  padding-top: 2%;
+  background-color: #0c111f;
+}
+.card__figure,
+.card__home,
+.card__reglog {
+  align-items: center;
+  gap: 20%;
+  padding: 2.5%;
+  color: #fff;
+}
+.card__logo-item,
+.submenu-edit,
+.card__reglog-item,
+.aside__info-item {
+  color: rgba(255, 255, 255, 0.6);
+}
+.submenu-edit a,
+.card__reglog-item a {
+  color: rgba(255, 255, 255, 0.6);
+}
+.submenu-edit a:hover,
+.card__reglog-item a:hover {
+  color: #fff;
+}
+.card__reglog-item--spec {
+  padding: 10%;
+  border-radius: 48px;
+}
+.aside {
+  flex-direction: row;
+}
+.aside p,
+.card__title-item,
+.card__text-item,
+.card__img-item,
+.list-item__slogan-item,
+.list-item__text-item {
+  margin-left: 10%;
+  margin-top: 5%;
+}
+.aside__info-item--edit {
+  text-transform: uppercase;
+  color: #e97458;
+}
+.aside__wrapper-item {
+  margin-top: 35vh;
+}
+.aside__info-item--spec,
+.card__title-item,
+.row-item__header-item {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 125%;
+  font-family: "Volkhov", serif;
+}
+.card__subtitle,
+.card__title {
+  flex-direction: column;
+  width: 42%;
+  margin: 2% 5% 2% 5%;
+}
+.card__title {
+  width: 50%;
+}
+.card__text-item,
+.list-item__text-item {
+  line-height: 180%;
+  opacity: 0.6;
+}
+.card__img-item img {
+  width: 50%;
+  border-radius: 5%;
+}
+.list-item__slogan-item {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.list-item {
+  align-items: center;
+  padding: 2.5%;
+}
+.row-item,
+.holder {
+  justify-content: space-between;
+}
+.row-item__header-item {
+  margin: 0 auto;
+}
+svg {
+  margin-right: 5%;
+}
+.holder__wrap img {
+  border-radius: 5% 5% 0 0;
+}
+.holder__wrap {
+  padding: 2%;
+}
+.holder__text-item,
+.holder__text-num--spec {
+  font-weight: 700;
+  line-height: 117%;
+  margin-top: 5%;
+}
+.holder__text-num {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  line-height: 1.3;
+}
+.buy__ticket-btn {
+  padding: 2% 2%;
+  margin-left: 15%;
+  border-radius: 45px;
+  cursor: pointer;
+}
+.buy__ticket-btn:hover {
+  background-color: yellow;
+  transition: 0.8s ease-in-out;
+}
+.wrap {
+  background-color: #0c111f;
+  color: #fff;
+}
+.wrap__section,
+.wrap__section--edit {
+  width: 33%;
+}
+.wrap__header {
+  font-size: 64px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+.wrap__header,
+.wrap__item,
+.wrap__item_btn,
+.wrap__section--edit {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.wrap__item_btn {
+  padding: 5%;
+  background-color: yellow;
+  border-radius: 100px;
+}
+.wrap__btn--edit--spec {
+  text-align: center;
+  padding: 1%;
+  background-color: #0c111f;
+  border-radius: 58px;
+}
