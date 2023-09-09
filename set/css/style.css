@@ -3,10 +3,12 @@
   width: 100%;
   background-color: bisque;
 }
+
 p {
   font-style: italic;
   text-align: start;
 }
+
 a {
   text-decoration: none;
   font-size: 24px;
@@ -20,6 +22,7 @@ a:hover {
   color: blue;
   background-color: magenta;
 }
+
 img {
   border: 2px solid darkmagenta;
   border-radius: 25px;
@@ -34,6 +37,12 @@ img:hover {
   text-align: center;
   margin: 0 auto;
   width: 80%;
+}
+.auto-col__code {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: coral;
 }
 .auto-col__about {
   color: rgb(47, 41, 41);
