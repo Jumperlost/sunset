@@ -74,10 +74,50 @@
           <p class="form__group--spec">
             <input type="submit" value="Search" />
           </p>
+          <label for="subscribe">Subscribe to newsletter:</label>
+          <input type="checkbox" id="subscribe" name="subscribe" value="yes" />
         </form>
       </div>
       <div class="wrapper__img--spec">
         <img class="img__reg" src="../img/car__back.avif" alt="car" />
+        <form action="https://fom.in.ua/echo" method="post" class="inner">
+          <p class="inner-text">Submit your question</p>
+          <label for="name" class="inner__section-input">Name</label>
+          <input
+            [required]
+            type="name"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            class="inner__section-item"
+            required
+          />
+          <label for="name" class="inner__section-input">Email</label>
+          <input
+            [required]
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter email address"
+            required
+            class="inner__section-item"
+          />
+          <label for="name" class="inner__section-input"></label>
+          <textarea
+            [required]
+            id="question"
+            name="question"
+            rows="4"
+            placeholder="Your question"
+            aria-valuemax="120"
+            type="text"
+            required
+            class="inner__section-item--edit"
+          ></textarea>
+          <p class="form__group--spec">
+            <input type="submit" value="Sumbit" />
+          </p>
+        </form>
       </div>
     </div>
   </body>
