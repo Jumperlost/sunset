@@ -1,14 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Volkhov:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Roboto:ital,wght@0,400;0,700;1,700&family=Volkhov:wght@700&display=swap");
+
 body {
-  flex-shrink: 0;
   font-family: "Inter", sans-serif;
+  font-family: "Volkhov", serif;
   font-style: normal;
   font-weight: 400;
   background-color: #fff;
   letter-spacing: 0.5%;
-  overflow-y: scroll;
   color: #0c111f;
-  font-size: 20px;
 }
 body,
 .card__middle,
@@ -49,7 +48,6 @@ header,
 }
 .link-item {
   display: block;
-  padding: 5%;
 }
 .submenu-link {
   position: relative;
@@ -79,6 +77,15 @@ header,
 .card__reglog-item,
 .aside__info-item {
   color: rgba(255, 255, 255, 0.6);
+  line-height: 145%;
+}
+.card__logo-item a {
+  text-decoration: none;
+  color: #fff;
+}
+.card__reglog-item--spec a {
+  text-decoration: none;
+  color: inherit;
 }
 .submenu-edit a,
 .card__reglog-item a {
@@ -91,31 +98,35 @@ header,
 .card__reglog-item--spec {
   padding: 10%;
   border-radius: 48px;
+  text-decoration: none;
 }
 .aside {
   flex-direction: row;
 }
 .aside p,
-.card__title-item,
-.card__text-item,
-.card__img-item,
 .list-item__slogan-item,
 .list-item__text-item {
-  margin-left: 10%;
+  margin-left: 20%;
   margin-top: 5%;
+}
+.card__title-item,
+.card__img-item,
+.card__text-item {
+  margin-left: 5%;
+  margin-bottom: 2.5%;
 }
 .aside__info-item--edit {
   text-transform: uppercase;
   color: #e97458;
 }
 .aside__wrapper-item {
-  margin-top: 35vh;
+  margin-top: 13%;
 }
 .aside__info-item--spec,
 .card__title-item,
 .row-item__header-item {
   font-weight: 700;
-  font-size: 80px;
+  font-size: 5rem;
   line-height: 125%;
   font-family: "Volkhov", serif;
 }
@@ -152,6 +163,9 @@ header,
 .row-item__header-item {
   margin: 0 auto;
 }
+.box-size--spec {
+  margin-top: 5%;
+}
 svg {
   margin-right: 5%;
 }
@@ -159,6 +173,7 @@ svg {
   border-radius: 5% 5% 0 0;
 }
 .holder__wrap {
+  text-align: center;
   padding: 2%;
 }
 .holder__text-item,
@@ -174,7 +189,7 @@ svg {
 }
 .buy__ticket-btn {
   padding: 2% 2%;
-  margin-left: 15%;
+  margin-left: 5%;
   border-radius: 45px;
   cursor: pointer;
 }
@@ -191,7 +206,7 @@ svg {
   width: 33%;
 }
 .wrap__header {
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 800;
   letter-spacing: -1px;
 }
@@ -202,14 +217,23 @@ svg {
   padding-top: 5%;
   padding-bottom: 5%;
 }
+.wrap__item {
+  line-height: 200%;
+}
 .wrap__item_btn {
+  cursor: pointer;
+  align-items: center;
+  gap: 5%;
+  width: 50%;
   padding: 5%;
   background-color: yellow;
   border-radius: 100px;
 }
 .wrap__btn--edit--spec {
-  text-align: center;
-  padding: 1%;
+  padding: 3%;
   background-color: #0c111f;
   border-radius: 58px;
+}
+.wrap__btn--edit--spec img {
+  top: 3px;
 }
