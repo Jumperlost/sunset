@@ -1,0 +1,107 @@
+// OFFERS
+.offers {
+  width: 76%;
+  margin: 0 auto;
+  margin-bottom: 81px;
+  .offers__heading {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 80px;
+    margin-bottom: 38px;
+    padding-left: 30px;
+  }
+  .float-center {
+    text-align: center;
+    &::after {
+      @include clearfix("", table, both);
+    }
+    .goods__item {
+      float: left;
+      background-color: $main-color;
+      margin-left: 30px;
+      padding-top: 25px;
+      .item-name {
+        margin: 20px 30px 20px 30px;
+      }
+      .item-btn {
+        display: block;
+        margin: 0 auto;
+        margin-top: 25px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+.card {
+  &::after {
+    @include clearfix("", table, both);
+  }
+}
+.card-body--mod,
+.card-body {
+  width: 36%;
+  background-color: $accent-color;
+  float: left;
+  margin-left: 30px;
+  &::after {
+    @include clearfix("", table, both);
+  }
+}
+
+.card-body--mod {
+  margin-left: 14%;
+}
+.text-container {
+  float: left;
+}
+.svg-container {
+  float: right;
+  margin: 56px 45px 36px 0;
+}
+
+.card__title,
+.card__text {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 140%;
+  color: $main-color;
+}
+.card__title {
+  margin: 35px 0 25px 40px;
+}
+.card__text {
+  margin: 0 0 25px 40px;
+}
+.card__input {
+  margin: 0 0 35px 40px;
+  border-radius: 30px;
+  padding: 4%;
+  width: 100%;
+  border: 1px solid $main-color;
+}
+.card__input::placeholder {
+  padding-left: 15%;
+  color: #c4c4c4;
+  opacity: 0.8;
+}
+
+.card-btn {
+  margin: 0 0 35px 40px;
+}
+
+.inner {
+  margin-top: 100px;
+  .inner__card {
+    margin-left: 17%;
+    &::after {
+      @include clearfix("", table, both);
+    }
+    .inner__item {
+      float: left;
+      padding: 2% 4%;
+      background-color: $main-color;
+      border: 1px solid $primary-color;
+    }
+  }
+}
